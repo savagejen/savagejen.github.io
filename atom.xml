@@ -4,7 +4,7 @@
   <title><![CDATA[Savagejen's Octopress Blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-04-28T23:00:10-05:00</updated>
+  <updated>2013-04-28T23:33:30-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Python Module Hijacking]]></title>
+    <link href="http://savagejen.github.io/blog/2013/04/28/python-module-hijacking/"/>
+    <updated>2013-04-28T23:03:00-05:00</updated>
+    <id>http://savagejen.github.io/blog/2013/04/28/python-module-hijacking</id>
+    <content type="html"><![CDATA[<p>Reading through documentation, I noticed a peculiarity about python: it&#8217;s susceptible to library hijacking attacks.</p>
+
+<p>Open your python interpreter and type in:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import sys
+</span><span class='line'>print sys.path</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The result should be a list of paths that python will look in to find a module, in the order that python looks for them in. In other words, a pythonpath is the python equivalent of a DLL search path in windows.</p>
+
+<p>You&#8217;ll note that the very first item on the list is &#8221;, which means your current working directory. So if you import io, the first place python will look for the io module is your current working directory.</p>
+
+<p>Now, let&#8217;s say that someone places an io.py file in the same directory as your script. Now, the next time your script is run, it will load their version of io instead of yours. A user can essentially hijack the intended functionality of a module and replace it with their own, and all they need are write permissions to the same directory as your python script. For servers that offer shells to a variety of users, this type of attack could be used as a local privelege escalation on that box.</p>
+
+<p>For example, here we have a script poc.py that opens a file (I know, not very useful, but it&#8217;s an example, so shhhh)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import io
+</span><span class='line'>
+</span><span class='line'>io.open('spam.txt', 'w')</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you place this script in the same directory as the following io.py file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def open(foo,bar):
+</span><span class='line'>  print "Pining for the fjords?!"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then when you go to run poc.py, you will get the output &#8220;Pining for the fjords?!&#8221;</p>
+
+<p>I sent this along to the python security team with a set of suggestions for fixing it. For one thing, I think the current working directory should be the last thing listed in the pythonpath by default. For another, python could provide a way for developers to specify the static path to their modules.</p>
+
+<p>The python security team let me know that this attack is already well known to them, and they have something called isolation mode planned for a future version of python.</p>
+
+<p>In the meantime, I&#8217;m told that you can configure virtualenv to only allow specific modules to be used by your python applications.</p>
+
+<p>And sysadmins, please, <em>never</em> allow people to write to the same directories that your python scripts run out of.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Patsy Proxy]]></title>

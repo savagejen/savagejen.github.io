@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>First Post! - Savagejen's Octopress Blog</title>
+  <title>Python Module Hijacking - Savagejen's Octopress Blog</title>
   <meta name="author" content="Jen Savage">
 
   
-  <meta name="description" content="Well, first post to this blog anyway. Since I gave up blogging in earnest ages ago, the purpose of this blog is to focus on tech rather than drivel &hellip;">
+  <meta name="description" content="Reading through documentation, I noticed a peculiarity about python: it&#8217;s susceptible to library hijacking attacks. Open your python &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://savagejen.github.io/blog/2013/04/28/first-post">
+  <link rel="canonical" href="http://savagejen.github.io/blog/2013/04/28/python-module-hijacking">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Savagejen's Octopress Blog" type="application/atom+xml">
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">First Post!</h1>
+      <h1 class="entry-title">Python Module Hijacking</h1>
     
     
       <p class="meta">
@@ -84,14 +84,56 @@
   
 
 
-<time datetime="2013-04-28T22:35:00-05:00" pubdate data-updated="true">Apr 28<span>th</span>, 2013</time>
+<time datetime="2013-04-28T23:03:00-05:00" pubdate data-updated="true">Apr 28<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Well, first post to this blog anyway. Since I gave up blogging in earnest ages ago, the purpose of this blog is to focus on tech rather than drivel on about life. If you want to hear me drivel on about life, check out: (<a href="https://twitter.com/savagejen">my twitter account</a>).</p>
+<div class="entry-content"><p>Reading through documentation, I noticed a peculiarity about python: it&#8217;s susceptible to library hijacking attacks.</p>
+
+<p>Open your python interpreter and type in:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import sys
+</span><span class='line'>print sys.path</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The result should be a list of paths that python will look in to find a module, in the order that python looks for them in. In other words, a pythonpath is the python equivalent of a DLL search path in windows.</p>
+
+<p>You&#8217;ll note that the very first item on the list is &#8221;, which means your current working directory. So if you import io, the first place python will look for the io module is your current working directory.</p>
+
+<p>Now, let&#8217;s say that someone places an io.py file in the same directory as your script. Now, the next time your script is run, it will load their version of io instead of yours. A user can essentially hijack the intended functionality of a module and replace it with their own, and all they need are write permissions to the same directory as your python script. For servers that offer shells to a variety of users, this type of attack could be used as a local privelege escalation on that box.</p>
+
+<p>For example, here we have a script poc.py that opens a file (I know, not very useful, but it&#8217;s an example, so shhhh)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import io
+</span><span class='line'>
+</span><span class='line'>io.open('spam.txt', 'w')</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you place this script in the same directory as the following io.py file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def open(foo,bar):
+</span><span class='line'>  print "Pining for the fjords?!"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then when you go to run poc.py, you will get the output &#8220;Pining for the fjords?!&#8221;</p>
+
+<p>I sent this along to the python security team with a set of suggestions for fixing it. For one thing, I think the current working directory should be the last thing listed in the pythonpath by default. For another, python could provide a way for developers to specify the static path to their modules.</p>
+
+<p>The python security team let me know that this attack is already well known to them, and they have something called isolation mode planned for a future version of python.</p>
+
+<p>In the meantime, I&#8217;m told that you can configure virtualenv to only allow specific modules to be used by your python applications.</p>
+
+<p>And sysadmins, please, <em>never</em> allow people to write to the same directories that your python scripts run out of.</p>
 </div>
 
 
@@ -114,7 +156,7 @@
   
 
 
-<time datetime="2013-04-28T22:35:00-05:00" pubdate data-updated="true">Apr 28<span>th</span>, 2013</time>
+<time datetime="2013-04-28T23:03:00-05:00" pubdate data-updated="true">Apr 28<span>th</span>, 2013</time>
       
 
 
@@ -122,7 +164,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://savagejen.github.io/blog/2013/04/28/first-post/" data-via="savagejen" data-counturl="http://savagejen.github.io/blog/2013/04/28/first-post/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://savagejen.github.io/blog/2013/04/28/python-module-hijacking/" data-via="savagejen" data-counturl="http://savagejen.github.io/blog/2013/04/28/python-module-hijacking/" >Tweet</a>
   
   
   
@@ -131,8 +173,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2013/04/28/the-patsy-proxy/" title="Previous Post: The Patsy Proxy">&laquo; The Patsy Proxy</a>
       
-        <a class="basic-alignment right" href="/blog/2013/04/28/uploaded-my-old-sparkl-motion-code-to-github/" title="Next Post: Uploaded my old Sparkl Motion code to github">Uploaded my old Sparkl Motion code to github &raquo;</a>
       
     </p>
   </footer>
