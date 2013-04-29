@@ -4,7 +4,7 @@
   <title><![CDATA[Savagejen's Octopress Blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-04-29T10:14:16-05:00</updated>
+  <updated>2013-04-29T10:15:35-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -18,7 +18,7 @@
     <link href="http://savagejen.github.io/blog/2013/04/29/installing-pebble-watchfaces/"/>
     <updated>2013-04-29T10:06:00-05:00</updated>
     <id>http://savagejen.github.io/blog/2013/04/29/installing-pebble-watchfaces</id>
-    <content type="html"><![CDATA[<p>So, the Pebble Watchface SDK is out and a bunch of developers are having fun creating their own custom watchfaces for it. As I was reading through the (<a href="http://developer.getpebble.com/1/01_GetStarted/01_Step_1">instructions</a>) on installing watchfaces that aren&#8217;t in the pebble app, I noticed that they have you start a HTTP server just so that you can download the watchface onto your pebble. Except, you don&#8217;t actually have to do this! You can tranfer the pbw file to your phone using dropbox, or email it to yourself, or use any number of other methods to transfer it to the phone and the phone will know that you want to open it in the Pebble app. There&#8217;s no real reason to add this extra complexity to what is essentially a very simple process.</p>
+    <content type="html"><![CDATA[<p>So, the (<a href="http://developer.getpebble.com/">Pebble Watchface SDK</a>) is out and a bunch of developers are having fun creating their own custom watchfaces for it. As I was reading through the (<a href="http://developer.getpebble.com/1/01_GetStarted/01_Step_1">instructions</a>) on installing watchfaces that aren&#8217;t in the pebble app, I noticed that they have you start a HTTP server just so that you can download the watchface onto your pebble. Except, you don&#8217;t actually have to do this! You can tranfer the pbw file to your phone using dropbox, or email it to yourself, or use any number of other methods to transfer it to the phone and the phone will know that you want to open it in the Pebble app. There&#8217;s no real reason to add this extra complexity to what is essentially a very simple process.</p>
 ]]></content>
   </entry>
   
