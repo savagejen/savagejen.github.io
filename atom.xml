@@ -4,7 +4,7 @@
   <title><![CDATA[Savagejen's Octopress Blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-04-28T23:33:30-05:00</updated>
+  <updated>2013-04-28T23:35:28-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -57,6 +57,8 @@
 <p>I sent this along to the python security team with a set of suggestions for fixing it. For one thing, I think the current working directory should be the last thing listed in the pythonpath by default. For another, python could provide a way for developers to specify the static path to their modules.</p>
 
 <p>The python security team let me know that this attack is already well known to them, and they have something called isolation mode planned for a future version of python.</p>
+
+<p>The good news is that this doesn&#8217;t work for protected modules! The bad news is that most modules aren&#8217;t protected modules.</p>
 
 <p>In the meantime, I&#8217;m told that you can configure virtualenv to only allow specific modules to be used by your python applications.</p>
 
