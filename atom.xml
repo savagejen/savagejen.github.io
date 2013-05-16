@@ -4,7 +4,7 @@
   <title><![CDATA[Savagejen's Octopress Blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-05-16T15:23:49-05:00</updated>
+  <updated>2013-05-16T16:25:53-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -18,7 +18,7 @@
     <link href="http://savagejen.github.io/blog/2013/05/16/pythons-definition-of-insanity/"/>
     <updated>2013-05-16T10:12:00-05:00</updated>
     <id>http://savagejen.github.io/blog/2013/05/16/pythons-definition-of-insanity</id>
-    <content type="html"><![CDATA[<p>(<a href="https://github.com/amatus">Amatus</a>] brought to my attention the fact that True can be set to False in python.</p>
+    <content type="html"><![CDATA[<p>(<a href="https://github.com/amatus">Amatus</a>) brought to my attention the fact that True can be set to False in python.</p>
 
 <p>So, for instance, if you open up your python interpreter and do:</p>
 
@@ -55,7 +55,7 @@ I have no idea! But check this out:</p>
 </span><span class='line'>False</span></code></pre></td></tr></table></div></figure>
 
 
-<p>So you can change the value of True or False on the same line as you set a variable.</p>
+<p>So you can change the value of True or False on the same line as you set a variable and that redefinition of True will affect setting every boolean value following it.</p>
 
 <p>(<a href="http://www.python.org/dev/peps/pep-0285/">The PEP for bool is also really a bizarre and interesting read.</a>)</p>
 ]]></content>
