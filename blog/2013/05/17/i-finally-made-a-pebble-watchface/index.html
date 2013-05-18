@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Installing Pebble Watchfaces - Savagejen's Octopress Blog</title>
+  <title>I Finally Made a Pebble Watchface - Savagejen's Octopress Blog</title>
   <meta name="author" content="Jen Savage">
 
   
-  <meta name="description" content="So, the (Pebble Watchface SDK) is out and a bunch of developers are having fun creating their own custom watchfaces for their (Pebbles). As I was &hellip;">
+  <meta name="description" content="I decided to make a watchface as part of a birthday gift for my boyfriend, (Dan Crowley). It was surprisingly easy and only took me a few hours to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://savagejen.github.io/blog/2013/04/29/installing-pebble-watchfaces">
+  <link rel="canonical" href="http://savagejen.github.io/blog/2013/05/17/i-finally-made-a-pebble-watchface">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Savagejen's Octopress Blog" type="application/atom+xml">
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Installing Pebble Watchfaces</h1>
+      <h1 class="entry-title">I Finally Made a Pebble Watchface</h1>
     
     
       <p class="meta">
@@ -84,14 +84,22 @@
   
 
 
-<time datetime="2013-04-29T10:06:00-05:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
+<time datetime="2013-05-17T23:43:00-05:00" pubdate data-updated="true">May 17<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>So, the (<a href="http://developer.getpebble.com/">Pebble Watchface SDK</a>) is out and a bunch of developers are having fun creating their own custom watchfaces for their (<a href="http://getpebble.com/">Pebbles</a>). As I was reading through the (<a href="http://developer.getpebble.com/1/01_GetStarted/01_Step_1">instructions</a>) on installing watchfaces that aren&#8217;t in the pebble app, I noticed that they have you start a HTTP server just so that you can download the watchface onto your pebble. Except, you don&#8217;t actually have to do this! You can tranfer the pbw file to your phone using dropbox, or email it to yourself, or use any number of other methods to transfer it to the phone and the phone will know that you want to open it in the Pebble app. There&#8217;s no real reason to add this extra complexity to what is essentially a very simple process.</p>
+<div class="entry-content"><p><img src="https://pbs.twimg.com/media/BKciRXjCUAA2yoi.jpg"></p>
+
+<p>I decided to make a watchface as part of a birthday gift for my boyfriend, (<a href="https://twitter.com/dan_crowley">Dan Crowley</a>).</p>
+
+<p>It was surprisingly easy and only took me a few hours to make. I had set up the pebble development environment previously, but turned out not to need it thanks to (<a href="https://cloudpebble.net">CloudPebble</a>). I was surprised to learn that CloudPebble is the work of a student and not something put out there by Pebble! It&#8217;s a really nice interface that makes Pebble development simple and accessible.</p>
+
+<p>For the watchface, I started with the code from the Simplicity watchface and then adapted it using the tutorials included in the SDK. I used a font downloaded from a (<a href="http://www.zeldauniverse.net/typography-and-fonts/">Legend of Zelda fansite</a>). The top of the watchface is the triforce, which is actually just an asterix in the font pack. I arranged the text below the triforce in such a way that it would continue the pyramid shape downward. The time is at the bottom of the watchface, represented as a number of rupees, so that you get richer throughout the day. The day of the month is the &#8220;Level&#8221; you&#8217;re on, with the month above it in short month format to maintain the pyramid shape.</p>
+
+<p>Dan loves it, but of course his favorite game is actually Final Fantasy VI (orignally marketed as Final Fantasy III here in the US). So I might have to make another watchface.</p>
 </div>
 
 
@@ -114,7 +122,7 @@
   
 
 
-<time datetime="2013-04-29T10:06:00-05:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
+<time datetime="2013-05-17T23:43:00-05:00" pubdate data-updated="true">May 17<span>th</span>, 2013</time>
       
 
 
@@ -122,7 +130,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://savagejen.github.io/blog/2013/04/29/installing-pebble-watchfaces/" data-via="savagejen" data-counturl="http://savagejen.github.io/blog/2013/04/29/installing-pebble-watchfaces/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://savagejen.github.io/blog/2013/05/17/i-finally-made-a-pebble-watchface/" data-via="savagejen" data-counturl="http://savagejen.github.io/blog/2013/05/17/i-finally-made-a-pebble-watchface/" >Tweet</a>
   
   
   
@@ -131,10 +139,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/04/28/python-module-hijacking/" title="Previous Post: Python Module Hijacking">&laquo; Python Module Hijacking</a>
+        <a class="basic-alignment left" href="/blog/2013/05/16/pythons-definition-of-insanity/" title="Previous Post: Python boolean *features*">&laquo; Python boolean *features*</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/05/16/pythons-definition-of-insanity/" title="Next Post: Python boolean *features*">Python boolean *features* &raquo;</a>
       
     </p>
   </footer>
@@ -238,8 +244,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://savagejen.github.io/blog/2013/04/29/installing-pebble-watchfaces/';
-        var disqus_url = 'http://savagejen.github.io/blog/2013/04/29/installing-pebble-watchfaces/';
+        var disqus_identifier = 'http://savagejen.github.io/blog/2013/05/17/i-finally-made-a-pebble-watchface/';
+        var disqus_url = 'http://savagejen.github.io/blog/2013/05/17/i-finally-made-a-pebble-watchface/';
         var disqus_script = 'embed.js';
       
     (function () {
