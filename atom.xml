@@ -4,7 +4,7 @@
   <title><![CDATA[Savagejen's Octopress Blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-05-17T23:58:47-05:00</updated>
+  <updated>2013-05-18T00:24:03-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -27,6 +27,8 @@
 <p>For the watchface, I started with the code from the Simplicity watchface and then adapted it using the tutorials included in the SDK. I used a font downloaded from a (<a href="http://www.zeldauniverse.net/typography-and-fonts/">Legend of Zelda fansite</a>). The top of the watchface is the triforce, which is actually just an asterix in the font pack. I arranged the text below the triforce in such a way that it would continue the pyramid shape downward. The time is at the bottom of the watchface, represented as a number of rupees, so that you get richer throughout the day. The day of the month is the &#8220;Level&#8221; you&#8217;re on, with the month above it in short month format to maintain the pyramid shape.</p>
 
 <p>Dan loves it, but of course his favorite game is actually Final Fantasy VI (orignally marketed as Final Fantasy III here in the US). So I might have to make another watchface.</p>
+
+<p>I uploaded the code to (<a href="https://github.com/savagejen/HappyBirthdayDan">Github</a>) and the pbw to (<a href="http://www.mypebblefaces.com/view?fID=3386&amp;aName=savagejen&amp;pageTitle=Triforce&amp;auID=3553">MyPebbleFaces</a>).</p>
 ]]></content>
   </entry>
   
