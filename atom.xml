@@ -4,7 +4,7 @@
   <title><![CDATA[Savagejen's Octopress Blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-05-18T00:24:03-05:00</updated>
+  <updated>2013-05-25T18:04:19-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Moogle Time]]></title>
+    <link href="http://savagejen.github.io/blog/2013/05/24/moogle-time/"/>
+    <updated>2013-05-24T13:15:00-05:00</updated>
+    <id>http://savagejen.github.io/blog/2013/05/24/moogle-time</id>
+    <content type="html"><![CDATA[<p><img src="https://pbs.twimg.com/media/BK4vvU6CMAEYxil.jpg">
+I&#8217;ve coded a new Pebble watchface that I am calling &#8220;Moogle Time&#8221;.
+The moogle sprite has three states: awake, tired, and asleep, and these change depending on the time of day.
+The HP represents the hour and the MP represents the minutes. You can download the code on (<a href="https://github.com/savagejen/MoogleTime">github</a>) and the pbw from (<a href="http://www.mypebblefaces.com/view?fID=3545&amp;aName=savagejen&amp;pageTitle=Moogle+Time&amp;auID=3553">myPebbleFaces</a>).</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I Finally Made a Pebble Watchface]]></title>
