@@ -4,7 +4,7 @@
   <title><![CDATA[savagejen's octopress blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-07-13T22:18:23-05:00</updated>
+  <updated>2013-07-14T14:08:17-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -18,7 +18,7 @@
     <link href="http://savagejen.github.io/blog/2013/07/13/i-will-be-speaking-at-defcon-and-blackhat-this-year/"/>
     <updated>2013-07-13T20:27:00-05:00</updated>
     <id>http://savagejen.github.io/blog/2013/07/13/i-will-be-speaking-at-defcon-and-blackhat-this-year</id>
-    <content type="html"><![CDATA[<p>If you are attending Defcon or Blackhat this year, look for me on the schedule. I will be presenting. Here is the talk summary:</p>
+    <content type="html"><![CDATA[<p>If you are attending Defcon or Blackhat this year, look for me on the schedule. I will be presenting alongside Dan Crowley and David Bryan. Here is the talk summary:</p>
 
 <blockquote><p>&#8220;Home Invasion 2.0 - Attacking Network-Controlled Consumer Devices&#8221;</p><p>A growing trend in electronics is to have them integrate with your home network in order to provide potentially useful features like automatic updates or to extend the usefulness of existing technologies such as door locks you can open and close from anywhere in the world. What this means for us as security professionals or even just as people living in a world of network-connected devices is that being compromised poses greater risk than before.</p><p>Once upon a time, a compromise only meant your data was out of your control. Today, it can enable control over the physical world resulting in discomfort, covert audio/video surveillance, physical access or even personal harm. If your door lock or space heater are compromised, you&#8217;re going to have a very bad day. This talk will discuss the potential risks posed by network-attached devices and even demonstrate new attacks against products on the market today.</p></blockquote>
 
