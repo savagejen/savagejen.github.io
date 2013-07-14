@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://savagejen.github.io/sitemap.xml 
