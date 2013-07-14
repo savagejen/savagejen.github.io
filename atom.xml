@@ -4,7 +4,7 @@
   <title><![CDATA[savagejen's octopress blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-07-13T22:15:17-05:00</updated>
+  <updated>2013-07-13T22:18:23-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -105,15 +105,6 @@ I have no idea! But check this out:</p>
 <p>So you can change the value of True or False on the same line as you set a variable and that redefinition will affect setting every boolean value following it.</p>
 
 <p>(<a href="http://www.python.org/dev/peps/pep-0285/">The PEP for bool is also really a bizarre and interesting read.</a>)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Installing Pebble Watchfaces]]></title>
-    <link href="http://savagejen.github.io/blog/2013/04/29/installing-pebble-watchfaces/"/>
-    <updated>2013-04-29T10:06:00-05:00</updated>
-    <id>http://savagejen.github.io/blog/2013/04/29/installing-pebble-watchfaces</id>
-    <content type="html"><![CDATA[<p>So, the (<a href="http://developer.getpebble.com/">Pebble Watchface SDK</a>) is out and a bunch of developers are having fun creating their own custom watchfaces for their (<a href="http://getpebble.com/">Pebbles</a>). As I was reading through the (<a href="http://developer.getpebble.com/1/01_GetStarted/01_Step_1">instructions</a>) on installing watchfaces that aren&#8217;t in the pebble app, I noticed that they have you start a HTTP server just so that you can download the watchface onto your pebble. Except, you don&#8217;t actually have to do this! You can tranfer the pbw file to your phone using dropbox, or email it to yourself, or use any number of other methods to transfer it to the phone and the phone will know that you want to open it in the Pebble app. There&#8217;s no real reason to add this extra complexity to what is essentially a very simple process.</p>
 ]]></content>
   </entry>
   
