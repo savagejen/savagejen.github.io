@@ -4,7 +4,7 @@
   <title><![CDATA[savagejen's octopress blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-07-14T14:08:17-05:00</updated>
+  <updated>2013-10-29T16:29:37-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Home Invasion 2.0]]></title>
+    <link href="http://savagejen.github.io/blog/2013/10/29/home-invasion-2-dot-0/"/>
+    <updated>2013-10-29T15:59:00-05:00</updated>
+    <id>http://savagejen.github.io/blog/2013/10/29/home-invasion-2-dot-0</id>
+    <content type="html"><![CDATA[<iframe src="http://www.youtube.com/embed/Xscf37Iv28s" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Home Invasion 2.0 was a talk that I gave with Dan Crowley and David Bryan at Defcon 21 and Blackhat 2013. It shows off some attacks on smart home devices.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I will be speaking at Defcon and Blackhat this year]]></title>
