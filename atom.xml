@@ -4,7 +4,7 @@
   <title><![CDATA[savagejen's octopress blog]]></title>
   <link href="http://savagejen.github.io/atom.xml" rel="self"/>
   <link href="http://savagejen.github.io/"/>
-  <updated>2013-10-29T16:32:35-05:00</updated>
+  <updated>2013-10-29T18:25:12-05:00</updated>
   <id>http://savagejen.github.io/</id>
   <author>
     <name><![CDATA[Jen Savage]]></name>
@@ -18,7 +18,7 @@
     <link href="http://savagejen.github.io/blog/2013/10/29/home-invasion-2-dot-0/"/>
     <updated>2013-10-29T15:59:00-05:00</updated>
     <id>http://savagejen.github.io/blog/2013/10/29/home-invasion-2-dot-0</id>
-    <content type="html"><![CDATA[<iframe width="640" height="480" src="http://www.youtube.com/embed/Xscf37Iv28s" frameborder="0" allowfullscreen></iframe>
+    <content type="html"><![CDATA[<iframe width="800" height="600" src="http://www.youtube.com/embed/Xscf37Iv28s" frameborder="0" allowfullscreen></iframe>
 
 
 <p>Home Invasion 2.0 was a talk that I gave with Dan Crowley and David Bryan at Defcon 21 and Blackhat 2013. It shows off some attacks on smart home devices.</p>
@@ -178,7 +178,7 @@ I have no idea! But check this out:</p>
     <link href="http://savagejen.github.io/blog/2013/04/28/the-patsy-proxy/"/>
     <updated>2013-04-28T22:56:00-05:00</updated>
     <id>http://savagejen.github.io/blog/2013/04/28/the-patsy-proxy</id>
-    <content type="html"><![CDATA[<iframe width="640" height="480" src="http://www.youtube.com/embed/UrjrVcv2jsE" frameborder="0" allowfullscreen></iframe>
+    <content type="html"><![CDATA[<iframe width="800" height="600" src="http://www.youtube.com/embed/UrjrVcv2jsE" frameborder="0" allowfullscreen></iframe>
 
 
 <p>The Patsy Proxy was a talk that I gave with Dan Crowley at Derbycon 2 and Defcon 20 Skytalks. It was recorded at Derbycon and is available to view via YouTube.</p>
@@ -192,7 +192,7 @@ I have no idea! But check this out:</p>
     <id>http://savagejen.github.io/blog/2013/04/28/uploaded-my-old-sparkl-motion-code-to-github</id>
     <content type="html"><![CDATA[<p>Sparkl Motion was my first Arduino project. I used the input from an accelerometer to modify the rate of change of output via pwm to power a strand of LEDs on a necklace. The result were LEDs that &#8220;sparkled&#8221; quicker or slower depending on your movement.</p>
 
-<object type="application/x-shockwave-flash" width="400" height="300" data="http://www.flickr.com/apps/video/stewart.swf?v=109786" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&photo_secret=ac66ef55cb&photo_id=4448899259"></param> <param name="movie" value="http://www.flickr.com/apps/video/stewart.swf?v=109786"></param> <param name="bgcolor" value="#000000"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=109786" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&photo_secret=ac66ef55cb&photo_id=4448899259" height="300" width="400"></embed></object>
+<object type="application/x-shockwave-flash" width="800" height="600" data="http://www.flickr.com/apps/video/stewart.swf?v=109786" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&photo_secret=ac66ef55cb&photo_id=4448899259"></param> <param name="movie" value="http://www.flickr.com/apps/video/stewart.swf?v=109786"></param> <param name="bgcolor" value="#000000"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=109786" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&photo_secret=ac66ef55cb&photo_id=4448899259" height="300" width="400"></embed></object>
 
 
 <p>(<a href="https://github.com/savagejen/Arduino/tree/master/sparklmotion">The arduino sketch has now been uploaded to my github account</a>).</p>
